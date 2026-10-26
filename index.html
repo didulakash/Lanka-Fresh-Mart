@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Fresh Mart - Sales Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fa-solid fa-store"></i>
+                <span>Lanka Fresh Mart</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#" class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Sales</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-invoice"></i> Reports</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+
+            <div class="nav-right-actions">
+                <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="user-name">Didul Akash</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <section class="kpi-section">
+            <div class="kpi-card">
+                <div class="kpi-icon"><i class="fa-solid fa-coins"></i></div>
+                <div class="kpi-details">
+                    <h3>Total Revenue</h3>
+                    <p id="kpi-total-revenue">LKR 0</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div class="kpi-details">
+                    <h3>Total Units Sold</h3>
+                    <p id="kpi-total-units">0</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="kpi-details">
+                    <h3>Best Month</h3>
+                    <p id="kpi-best-month">-</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="kpi-details">
+                    <h3>Best Branch</h3>
+                    <p id="kpi-best-branch">-</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-card">
+                <h2>Monthly Revenue (Jan - Jun)</h2>
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>Q2 Revenue by Branch</h2>
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
