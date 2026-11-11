@@ -60,3 +60,7 @@ CSS Flexbox is used for 1D component alignment and internal layouts:
   * [MDN - Responsive Design & Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 * **Chart.js Documentation:**
   * [Chart.js Official Docs](https://www.chartjs.org/docs/latest/)
+
+
+
+
